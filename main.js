@@ -12,7 +12,7 @@ answer_holder = 0
 
 
 function updateCanvas() {
-    background("white")
+    background("pink")
     random_number = Math.floor((Math.random() * quick_draw_data_set.length) + 1)
     sketch = quick_draw_data_set[random_number]
     document.getElementById("sketch_name").innerHTML = "sketch to be drawn " + sketch
@@ -26,7 +26,7 @@ function preload() {
 function setup() {
     canvas = createCanvas(320, 320)
     canvas.center()
-    background("white")
+    background("pink")
     canvas.mouseReleased(classifyCanvas)
 
 }
